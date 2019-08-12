@@ -15,11 +15,10 @@ If you do not have the Zend library already included in your PHP installation...
 
 NOTE: In my instance, I have the Zend library residing under /usr/share/php/   Because of this, the following lines are commented.
 */
-/*set_include_path(implode(PATH_SEPARATOR, array(
+set_include_path(implode(PATH_SEPARATOR, array(
     realpath(APPLICATION_PATH . '/library'),
     get_include_path(),
 )));
-*/
 
 /** Zend_Application */
 require_once 'Zend/Application.php'; 
